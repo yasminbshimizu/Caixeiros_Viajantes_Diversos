@@ -37,8 +37,9 @@
   - `Matriz de Confusão - MNIST.png`: previsão obtida pela rede treinada.
   - `logos_ilum_cnpem_mcti_mec.jpg`: logotipos da institução na qual tal projeto foi realizado e seus vínculos.
 * `CNN.ipynb`: caderno principal do projeto, com o *download* do *dataset* MNIST, além de construção, treinamento, teste e resultados obtidos com a CNN.
-* `README.md`: descrição geral do projeto.
  -->
+ 
+* `README.md`: descrição geral do projeto.
   
 
 ## 🧬 Construindo e evoluindo o algoritmo genético
