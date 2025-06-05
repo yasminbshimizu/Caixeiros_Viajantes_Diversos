@@ -14,6 +14,10 @@
 </p>
 
 ## 📝 Descrição
+
+* **Caixeiro viajante que prefere cidades ímpares:**
+
+* **Múltiplos caixeiros viajantes:**
  <!-- 
 <p align="justify"> 
   Redes neurais convolucionais (CNN, do inglês <i>Convolutional Neural Networks</i>) são algoritmos de <i>deep learning</i> que reconhecem padrões específicos que caracterizam e distinguem classes em imagens. São compostas, seguindo a estrutura padrão de redes neurais artificiais, por uma camada de entrada, uma camada de saída, e camadas ocultas de processamento, diferenciando-se nas últimas, as quais são compostas pela combinação de camadas convolucionais e de <i>pooling</i>. [3] </p>
@@ -38,6 +42,10 @@
   
 
 ## 🧬 Construindo e evoluindo o algoritmo genético
+
+* **Caixeiro viajante que prefere cidades ímpares:**
+
+* **Múltiplos caixeiros viajantes:**
  <!-- 
 <p align="justify">
  Para a contrução da rede, foi usado como base o código desenvolvido por Nicola [1]. As alterações feitas estão relacionadas à biblioteca <code>Lightning</code>, que passou por atualizações nos últimos anos, deixando-a um pouco mais independente do <code>Pytorch</code>. Além disso, criamos os atributos <code>.y_true</code> e <code>.y_pred</code>, que salva as <i>labels</i> reais e previstas, respectivamente, para possibilitar o plot de uma matriz de confusão com os resultados. Também excluímos a função <code>main</code> para treinar e testar a rede manualmente, como feito em aula, e definimos a taxa de aprendizado fora da classe. Como o objetivo aqui é apenas testar a funcionalidade da rede construída, o treinamento foi feito em poucas épocas, com <code>NUM_EPOCAS = 5</code>. Por fim, todo o código foi comentado para melhor entendimento da estrutura da CNN.
@@ -46,6 +54,12 @@
 
 
 ## 🔢 Resultados Obtidos
+
+
+* **Caixeiro viajante que prefere cidades ímpares:**
+
+* **Múltiplos caixeiros viajantes:**
+  
  <!-- 
 <p align="justify">Os resultados obtidos foram excelentes. A baixa variabilidade dos dados, aliada ao grande número de exemplos e ao uso de uma ferramenta otimizada, a biblioteca Lightning, justifica a matriz de confusão apresentada a seguir, bem como a acurácia superior a 98% alcançada com apenas duas épocas. A concentração da densidade de predições na diagonal principal revela a qualidade do modelo, indicando que ele não está sobreajustado, mas sim realizando uma grande quantidade de previsões corretas.</p>
 <p> </p>
