@@ -43,7 +43,17 @@
 * `funcoes_caixeiros.py`: script com as funções construídas, necessárias para a evolução dos algoritmos genéticos
 * `README.md`: descrição geral do projeto.
   
+## 🖇️ Informações técnicas
+* Linguagem de programação: `Python 3.9`
+* Software:  `Jupyter Notebook`, `Visual Studio Code`
+* Bibliotecas e Módulos: `random`, `matplotlib.pyplot`, `pprint`, `functools`, `itertools`
 
+### Como executar o algoritmo?
+Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em compiladores de Python como Jupyter Notebook, Visual Studio Code e Google Colab. Para tal, é necessário:
+1. A instalação das bibliotecas citadas acima, utilizando, por exemplo, o método `!pip install <nome_da_biblioteca>`;
+2. O download do *script* `funcoes_caixeiro.py` e do notebook que se deseja executar (`Fera_Formidavel_10` ou `Fera_Formidavel_11`) no mesmo diretório;
+3. Execução do notebook em um compilador de Python.
+   
 ## 🧬 Construindo e evoluindo o algoritmo genético
 
 * **Caixeiro viajante que prefere cidades ímpares:**
@@ -74,20 +84,8 @@
  <!-- 
 <p align="justify">A biblioteca Lightning mostrou-se bastante eficiente para lidar com os dados disponíveis. Especificamente, trabalhamos com um grande volume de dados e com baixa variabilidade entre os exemplos. Ainda assim, apenas duas épocas de treinamento com três filtros foram suficientes para alcançar uma acurácia superior a 98%. Dessa forma, consideramos essa ferramenta bastante poderosa.</p>
 -->
-## 🖇️ Informações técnicas
-* Linguagem de programação: `Python 3.9`
-* Software:  `Jupyter Notebook`, `Visual Studio Code`
-* Bibliotecas e Módulos: `random`, `matplotlib.pyplot`, `pprint`, `functools`, `itertools`
-
-#### Como executar o algoritmo?
-Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em compiladores de Python como Jupyter Notebook, Visual Studio Code e Google Colab. Para tal, é necessário:
-1. A instalação das bibliotecas citadas acima, utilizando, por exemplo, o método `!pip install <nome_da_biblioteca>`;
-2. O download do *script* `funcoes_caixeiro.py` e do notebook que se deseja executar (`Fera_Formidavel_10` ou `Fera_Formidavel_11`) no mesmo diretório;
-3. Execução do notebook em um compilador de Python.
 
 ## 🧠 Contribuições dos Colaboradores
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/170521728?v=4" width=115><br><sub> Vitor Dreveck</sub>](https://github.com/vitordreveck-ilum)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/171518829?v=4" width=115><br><sub>Yasmin Shimizu</sub>](https://github.com/yasminbshimizu)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](https://lattes.cnpq.br/7813674402525956)<br> [<sub>Linkedin</sub>](https://www.linkedin.com/in/yasminbshimizu/) | [<img loading="lazy" src="https://github.com/user-attachments/assets/463d4753-7fa4-4a42-aa54-409e4150bb51" width=115><br> <sub> Prof. Dr. Daniel R. Cassar </sub>](https://github.com/drcassar)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/1717397276752482) | 
-| :---: | :---: | :---: | 
 
 #### Para o Projeto:
 * Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema, implementação de busca exaustiva, comentários descritivos no código .
@@ -98,3 +96,6 @@ Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em co
 * Yasmin Shimizu: Documentação do readme.
 
 **Orientação e Revisão:** Prof. Dr. Daniel R. Cassar.
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/170521728?v=4" width=115><br><sub> Vitor Dreveck</sub>](https://github.com/vitordreveck-ilum)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/171518829?v=4" width=115><br><sub>Yasmin Shimizu</sub>](https://github.com/yasminbshimizu)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](https://lattes.cnpq.br/7813674402525956)<br> [<sub>Linkedin</sub>](https://www.linkedin.com/in/yasminbshimizu/) | [<img loading="lazy" src="https://github.com/user-attachments/assets/463d4753-7fa4-4a42-aa54-409e4150bb51" width=115><br> <sub> Prof. Dr. Daniel R. Cassar </sub>](https://github.com/drcassar)<br> [<sub>Ilum - CNPEM</sub>](https://ilum.cnpem.br/)<br> [<sub>Currículo Lattes</sub>](http://lattes.cnpq.br/1717397276752482) | 
+| :---: | :---: | :---: | 
