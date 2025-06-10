@@ -85,7 +85,7 @@
 | :---: | :---: | :---: | 
 
 #### Para o Projeto:
-* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema, comentários descritivos no código .
+* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema, implementação de busca exaustiva, comentários descritivos no código .
 * Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
 
 #### Para o Repositório GitHub:
