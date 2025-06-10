@@ -38,7 +38,9 @@
   - `logos_ilum_cnpem_mcti_mec.jpg`: logotipos da institução na qual tal projeto foi realizado e seus vínculos.
 * `CNN.ipynb`: caderno principal do projeto, com o *download* do *dataset* MNIST, além de construção, treinamento, teste e resultados obtidos com a CNN.
  -->
- 
+* `Fera_Formidavel_10.ipynb`: otimização do problema do caixeiro viajante que prefere cidades ímpares através de um algoritmo genético.
+* `Fera_Formidavel_11.ipynb`: otimização do problema dos múltiplos caixeiros viajantes através de um algoritmo genético.
+* `funcoes_caixeiros.py`: script com as funções construídas, necessárias para a evolução dos algoritmos genéticos
 * `README.md`: descrição geral do projeto.
   
 
@@ -55,7 +57,6 @@
 
 
 ## 🔢 Resultados Obtidos
-
 
 * **Caixeiro viajante que prefere cidades ímpares:**
 
@@ -84,11 +85,11 @@
 | :---: | :---: | :---: | 
 
 #### Para o Projeto:
-* Vitor Dreveck: .
-* Yasmin Shimizu: .
+* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
+* Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema..
 
 #### Para o Repositório GitHub:
-* Vitor Dreveck: .
-* Yasmin Shimizu: .
+* Vitor Dreveck: Upload de arquivos.
+* Yasmin Shimizu: Documentação do readme.
 
 **Orientação e Revisão:** Prof. Dr. Daniel R. Cassar.
