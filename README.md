@@ -85,8 +85,8 @@
 | :---: | :---: | :---: | 
 
 #### Para o Projeto:
-* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
-* Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema..
+* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema, comentários descritivos no código .
+* Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
 
 #### Para o Repositório GitHub:
 * Vitor Dreveck: Upload de arquivos.
