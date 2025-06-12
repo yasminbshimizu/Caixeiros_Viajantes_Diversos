@@ -351,7 +351,7 @@ def plota_multiplos_trajetos(cidades, individuo):
 
 
 
-def _converte_para_total(candidato_original):
+def converte_para_total(candidato_original):
     """Transforma uma lista de listas em uma lista corrida, mantendo a ordem de aparição dos elementos.
 
     Args:
@@ -366,7 +366,7 @@ def _converte_para_total(candidato_original):
     return candidato_total, indices_original
 
 
-def _desconverte_de_total(candidato_total, indices_original):
+def desconverte_de_total(candidato_total, indices_original):
     """Transforma uma lista corrida em uma lista de listas, baseando-se no índice em que cada lista interna termina.
 
     Args:
@@ -658,13 +658,13 @@ def cruzamento_ordenado_multiplos_cx(pai, mae, chance_de_cruzamento):
     """
     if random.random() < chance_de_cruzamento:
 
-        pai_total, indices_pai = _converte_para_total(pai)
-        mae_total, indices_mae = _converte_para_total(mae)
+        pai_total, indices_pai = converte_para_total(pai)
+        mae_total, indices_mae = converte_para_total(mae)
 
         filho1_total, filho2_total = cruzamento_ordenado(pai_total, mae_total, 1)
 
-        filho1 = _desconverte_de_total(filho1_total, indices_pai)
-        filho2 = _desconverte_de_total(filho2_total, indices_mae)
+        filho1 = desconverte_de_total(filho1_total, indices_pai)
+        filho2 = desconverte_de_total(filho2_total, indices_mae)
 
         return filho1, filho2
     else:
@@ -745,7 +745,7 @@ def mutacao_troca_multiplos_cx(populacao, chance_de_mutacao):
     for individuo in populacao:
         if random.random() < chance_de_mutacao:
 
-            individuo_total, indices_individuo = _converte_para_total(individuo)
+            individuo_total, indices_individuo = converte_para_total(individuo)
 
             gene1 = random.randint(0, len(individuo_total) - 1)
             gene2 = random.randint(0, len(individuo_total) - 1)
@@ -759,7 +759,7 @@ def mutacao_troca_multiplos_cx(populacao, chance_de_mutacao):
                 individuo_total[gene1],
             )
 
-            individuo = _desconverte_de_total(individuo_total, indices_individuo)
+            individuo = desconverte_de_total(individuo_total, indices_individuo)
     
 
 def mutacao_tamanho(populacao, chance_de_mutacao):
@@ -773,7 +773,7 @@ def mutacao_tamanho(populacao, chance_de_mutacao):
     for individuo in populacao:
         if random.random() < chance_de_mutacao:
 
-            individuo_total, indices_individuo = _converte_para_total(individuo)
+            individuo_total, indices_individuo = converte_para_total(individuo)
 
             sorteado = random.choice(indices_individuo[:-1])
             if random.random() < 0.5:
@@ -789,4 +789,4 @@ def mutacao_tamanho(populacao, chance_de_mutacao):
 
             indices_individuo[indices_individuo.index(sorteado)] = novo_indice
 
-            individuo = _desconverte_de_total(individuo_total, indices_individuo)
+            individuo = desconverte_de_total(individuo_total, indices_individuo)
