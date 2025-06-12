@@ -10,7 +10,10 @@
 <p align="center"><strong>Orientador:</strong> Prof. Dr. Daniel R. Cassar</p>
 
 <p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<!--
+  <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+  -->
+  <img loading="lazy" src="https://img.shields.io/badge/STATUS-EM%20REVIS%C3%83O-yellow"/>
 </p>
 
 ## 📝 Descrição
@@ -24,9 +27,16 @@ Neste trabalho, buscamos trazer diferentes abordagens para a resolução do prob
 * **Múltiplos caixeiros viajantes:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de existir mais de um caixeiro? Considere que, além das condições tradicionais do problema, cada caixeiro passa por pelo menos uma cidade, começa em uma cidade diferente e jamais visita cidades já visitadas por outros caixeiros.
   
 ## 📔 Notebooks, scripts e arquivos do projeto
-* `Fera_Formidavel_10.ipynb`: otimização do problema do caixeiro viajante que prefere cidades ímpares através de um algoritmo genético.
-* `Fera_Formidavel_11.ipynb`: otimização do problema dos múltiplos caixeiros viajantes através de um algoritmo genético.
-* `funcoes_caixeiros.py`: script com as funções construídas, necessárias para a evolução dos algoritmos genéticos.
+* `Caixeiro Viajante que prefere cidades Ímpares`:
+  * `Fera_Formidavel_10.ipynb`: otimização do problema do caixeiro viajante que prefere cidades ímpares através de um algoritmo genético.
+  * `funcoes_fera_10.py`: script com as funções construídas, necessárias para a evolução deste algoritmo genético.
+  * `results_cx_impar.png`: gráfico que representa as cidades utilizadas para o problema e o trajeto encontrado pelo algoritmo genético.
+   
+* `Múltiplos Caixeiros Viajantes`:
+  * `Fera_Formidavel_11.ipynb`: otimização do problema dos múltiplos caixeiros viajantes através de um algoritmo genético.
+  * `funcoes_fera_11.py`: script com as funções construídas, necessárias para a evolução deste algoritmo genético.
+  * `results_multi_cx.png`: gráfico que representa as cidades utilizadas para o problema e os trajetos encontrados pelo algoritmo genético.
+    
 * `README.md`: descrição geral do projeto.
   
 ## 🖇️ Informações técnicas
@@ -37,7 +47,7 @@ Neste trabalho, buscamos trazer diferentes abordagens para a resolução do prob
 ### Como executar o algoritmo?
 Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em compiladores de Python como Jupyter Notebook, Visual Studio Code e Google Colab. Para tal, é necessário:
 1. A instalação das bibliotecas citadas acima, utilizando, por exemplo, o método `!pip install <nome_da_biblioteca>`;
-2. O download do *script* `funcoes_caixeiro.py` e do notebook que se deseja executar (`Fera_Formidavel_10` ou `Fera_Formidavel_11`) no mesmo diretório;
+2. O download do *script* para o problema (`funcoes_fera_10.py` ou `funcoes_fera_11.py`) e do notebook que se deseja executar (`Fera_Formidavel_10` ou `Fera_Formidavel_11`) no mesmo diretório;
 3. Execução do notebook em um compilador de Python.
    
 ## 🧬 Construindo e evoluindo o algoritmo genético
@@ -60,15 +70,24 @@ Para a otimização dos problemas, nos baseamos no algoritmo desenvolvido pelo P
   - `mutacao_tamanho`: aplica uma mutação que altera o tamanho do trajeto de dois caixeiros em uma cidade.
 
 
-## 🔢 Resultados Obtidos
+## 🔄️ Resultados Obtidos
+A fim de analisar os resultados obtidos por cada algoritmo genético, foi feita a busca exautiva para cada problema, encontrando o resultado ótimo que minimiza as distâncias nas condições impostas. Assim, ambos os algoritmos encontraram a resposta ótima para o problema, indicando que estes foram bem implementados e cumprem o objetivo proposto.
 
-* **Caixeiro viajante que prefere cidades ímpares:**
+<div align="center">
+  <b>Caixeiro viajante que prefere cidades ímpares</b> 
+</div>
 
-* **Múltiplos caixeiros viajantes:**
+<div align="center">
+  <img src="Caixeiro Viajante que prefere cidades Ímpares/results_cx_impar.png" alt="Descrição da imagem" width="500"/>
+</div>
+
+  <div align="center">
+    <b>Múltiplos caixeiros viajantes</b>
+  </div>
   
-
-## 😁 Conclusão
-
+  <div align="center">
+  <img src="Múltiplos Caixeiros Viajantes/results_multi_cx.png" alt="Descrição da imagem" width="500"/>
+</div>
 
 ## 📚 Referências
 
@@ -83,8 +102,8 @@ Para a otimização dos problemas, nos baseamos no algoritmo desenvolvido pelo P
 * Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
 
 #### Para o Repositório GitHub:
-* Vitor Dreveck: Upload de arquivos.
-* Yasmin Shimizu: Documentação do readme.
+* Vitor Dreveck: Upload de arquivos de código.
+* Yasmin Shimizu: Documentação do README, upload de imagens.
 
 **Orientação e Revisão:** Prof. Dr. Daniel R. Cassar.
 
