@@ -15,32 +15,18 @@
 
 ## 📝 Descrição
 
-* **Caixeiro viajante que prefere cidades ímpares:**
+O problema do **caixeiro viajante** é um clássico problema de otimização combinatória com complexidade NP-difícil estudada, principalmente, por cientistas da computação. É dado pelo enunciado "Dada uma lista de cidades e as distâncias entre cada par de cidades, qual é a rota mais curta possível que visita cada cidade exatamente uma vez e retorna à cidade de origem?"[2], e sua resolução pode ser aplicada, por exemplo, a logística, encontrando as rotas mais curtas para distibuição de mercadoria e, assim, minimizando os custos operacionais. [1][2] Uma das abordagens computacionais possíveis para a resolução do problema do caixeiro viajante é a construção de algoritmos genéticos, que buscam otimizar problemas complexos baseando-se na teoria da evolução de Darwin, com operadores de seleção, cruzamento e mutação. [1]
 
-* **Múltiplos caixeiros viajantes:**
- <!-- 
-<p align="justify"> 
-  Redes neurais convolucionais (CNN, do inglês <i>Convolutional Neural Networks</i>) são algoritmos de <i>deep learning</i> que reconhecem padrões específicos que caracterizam e distinguem classes em imagens. São compostas, seguindo a estrutura padrão de redes neurais artificiais, por uma camada de entrada, uma camada de saída, e camadas ocultas de processamento, diferenciando-se nas últimas, as quais são compostas pela combinação de camadas convolucionais e de <i>pooling</i>. [3] </p>
+Neste trabalho, buscamos trazer diferentes abordagens para a resolução do problema do caixeiro viajante e resolvê-las utilizando algoritmos genéticas. Essas abordagens foram: 
 
-<p align="justify">
-  As camadas convolucionais de uma CNN são caracterizadas por aplicar filtros na imagem, realçando regiões e traços característicos para a classificação. Já a camada de <i>pooling</i> reduz a dimensão da imagem, condensando as informações de vários pixel da região -- o <i>MaxPooling</i>, por exemplo, utiliza apenas o valor de maior píxel em blocos 2x2. Em geral, camadas convolucionais e de <i>pooling</i> são construídas em sequência, até que a matriz, após os processamentos anteriores, apresente apenas um ou poucos pixels que serão combinados e efetivamente associados a uma das classes. [3] </p>
+* **Caixeiro viajante que prefere cidades ímpares:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de passar primeiro pelas cidades de índice ímpar? Considere que, além das condições tradicionais do problema, o caixeiro sempre começa na cidade de índice zero, passa por todas as cidades ímpares, e só então percorre pelas cidades pares, retornando à cidade zero no fim do trajeto.
 
-<p align="justify">
-  Este trabalho apresenta a construção de uma CNN utilizando dados do <i>dataset</i> <code>MNIST</code> importado do <code>PyTorch</code>, o qual contém inúmeros tensores de imagens em preto e branco, acompanhados de seus respectivos rótulos (<i>labels</i>) representando os dígitos. Partindo do código de referência feito por Nicola [1], foram realizadas modificações para torná-lo compatível com a biblioteca <code>Lightning</code>, permitindo a obtenção de um modelo otimizado para a identificação de números manuscritos. Para avaliar a qualidade do modelo, também foi gerada uma matriz de confusão.</p>
-</p>
- -->
+* **Múltiplos caixeiros viajantes:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de existir mais de um caixeiro? Considere que, além das condições tradicionais do problema, cada caixeiro começa em uma cidade diferente e jamais visita cidades já visitadas por outros caixeiros.
+  
 ## 📔 Notebooks, scripts e arquivos do projeto
- <!-- 
-* `Imagens`: Pasta contento figuras utilizadas no README e o código para gerar a imagem de visualização do *dataset*.
-  - `24Imagens_MNIST.png`: imagem de visualização do *dataset*.
-  - `Construcao-Figura-24Imagens_MNIST.ipynb`: código para gerar a imagem de visualização do *dataset*.
-  - `Matriz de Confusão - MNIST.png`: previsão obtida pela rede treinada.
-  - `logos_ilum_cnpem_mcti_mec.jpg`: logotipos da institução na qual tal projeto foi realizado e seus vínculos.
-* `CNN.ipynb`: caderno principal do projeto, com o *download* do *dataset* MNIST, além de construção, treinamento, teste e resultados obtidos com a CNN.
- -->
 * `Fera_Formidavel_10.ipynb`: otimização do problema do caixeiro viajante que prefere cidades ímpares através de um algoritmo genético.
 * `Fera_Formidavel_11.ipynb`: otimização do problema dos múltiplos caixeiros viajantes através de um algoritmo genético.
-* `funcoes_caixeiros.py`: script com as funções construídas, necessárias para a evolução dos algoritmos genéticos
+* `funcoes_caixeiros.py`: script com as funções construídas, necessárias para a evolução dos algoritmos genéticos.
 * `README.md`: descrição geral do projeto.
   
 ## 🖇️ Informações técnicas
@@ -59,12 +45,6 @@ Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em co
 * **Caixeiro viajante que prefere cidades ímpares:**
 
 * **Múltiplos caixeiros viajantes:**
- <!-- 
-<p align="justify">
- Para a contrução da rede, foi usado como base o código desenvolvido por Nicola [1]. As alterações feitas estão relacionadas à biblioteca <code>Lightning</code>, que passou por atualizações nos últimos anos, deixando-a um pouco mais independente do <code>Pytorch</code>. Além disso, criamos os atributos <code>.y_true</code> e <code>.y_pred</code>, que salva as <i>labels</i> reais e previstas, respectivamente, para possibilitar o plot de uma matriz de confusão com os resultados. Também excluímos a função <code>main</code> para treinar e testar a rede manualmente, como feito em aula, e definimos a taxa de aprendizado fora da classe. Como o objetivo aqui é apenas testar a funcionalidade da rede construída, o treinamento foi feito em poucas épocas, com <code>NUM_EPOCAS = 5</code>. Por fim, todo o código foi comentado para melhor entendimento da estrutura da CNN.
-</p>
- -->
-
 
 ## 🔢 Resultados Obtidos
 
@@ -72,18 +52,15 @@ Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em co
 
 * **Múltiplos caixeiros viajantes:**
   
- <!-- 
-<p align="justify">Os resultados obtidos foram excelentes. A baixa variabilidade dos dados, aliada ao grande número de exemplos e ao uso de uma ferramenta otimizada, a biblioteca Lightning, justifica a matriz de confusão apresentada a seguir, bem como a acurácia superior a 98% alcançada com apenas duas épocas. A concentração da densidade de predições na diagonal principal revela a qualidade do modelo, indicando que ele não está sobreajustado, mas sim realizando uma grande quantidade de previsões corretas.</p>
-<p> </p>
-<div align="center">
-  <img src="Imagens/Matriz de Confusão - MNIST.png" alt="Descrição da imagem" width="500"/>
-</div>
 
--->
 ## 😁 Conclusão
- <!-- 
-<p align="justify">A biblioteca Lightning mostrou-se bastante eficiente para lidar com os dados disponíveis. Especificamente, trabalhamos com um grande volume de dados e com baixa variabilidade entre os exemplos. Ainda assim, apenas duas épocas de treinamento com três filtros foram suficientes para alcançar uma acurácia superior a 98%. Dessa forma, consideramos essa ferramenta bastante poderosa.</p>
--->
+
+
+## 📚 Referências
+
+[1] Aulas da disciplina ATP-303 Redes Neurais e Algoritmos Genéticos, ministradas pelo Prof. Dr. Daniel R. Cassar na Ilum Escola de Ciência.
+
+[2] WIKIPEDIA. Travelling salesman problem. Disponível em: (https://en.wikipedia.org/wiki/Travelling_salesman_problem)[https://en.wikipedia.org/wiki/Travelling_salesman_problem]. Acesso em: 12 jun. 2025.
 
 ## 🧠 Contribuições dos Colaboradores
 
