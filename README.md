@@ -32,7 +32,7 @@ Neste trabalho, buscamos trazer diferentes abordagens para a resolução do prob
 ## 🖇️ Informações técnicas
 * Linguagem de programação: `Python 3.9`
 * Software:  `Jupyter Notebook`, `Visual Studio Code`
-* Bibliotecas e Módulos: `random`, `matplotlib.pyplot`, `pprint`, `functools`, `itertools`
+* Bibliotecas e Módulos: `random`, `matplotlib.pyplot`, `colour`, `pprint`, `functools`, `itertools`
 
 ### Como executar o algoritmo?
 Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em compiladores de Python como Jupyter Notebook, Visual Studio Code e Google Colab. Para tal, é necessário:
@@ -60,7 +60,7 @@ Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em co
 
 [1] Aulas da disciplina ATP-303 Redes Neurais e Algoritmos Genéticos, ministradas pelo Prof. Dr. Daniel R. Cassar na Ilum Escola de Ciência.
 
-[2] WIKIPEDIA. Travelling salesman problem. Disponível em: (https://en.wikipedia.org/wiki/Travelling_salesman_problem)[https://en.wikipedia.org/wiki/Travelling_salesman_problem]. Acesso em: 12 jun. 2025.
+[2] WIKIPEDIA. Travelling salesman problem. Disponível em: https://en.wikipedia.org/wiki/Travelling_salesman_problem. Acesso em: 12 jun. 2025.
 
 ## 🧠 Contribuições dos Colaboradores
 
