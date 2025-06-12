@@ -21,7 +21,7 @@ Neste trabalho, buscamos trazer diferentes abordagens para a resolução do prob
 
 * **Caixeiro viajante que prefere cidades ímpares:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de passar primeiro pelas cidades de índice ímpar? Considere que, além das condições tradicionais do problema, o caixeiro sempre começa na cidade de índice zero, passa por todas as cidades ímpares, e só então percorre pelas cidades pares, retornando à cidade zero no fim do trajeto.
 
-* **Múltiplos caixeiros viajantes:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de existir mais de um caixeiro? Considere que, além das condições tradicionais do problema, cada caixeiro começa em uma cidade diferente e jamais visita cidades já visitadas por outros caixeiros.
+* **Múltiplos caixeiros viajantes:** Qual o caminho de menor distância no problema do caixeiro viajante, com a peculiaridade de existir mais de um caixeiro? Considere que, além das condições tradicionais do problema, cada caixeiro passa por pelo menos uma cidade, começa em uma cidade diferente e jamais visita cidades já visitadas por outros caixeiros.
   
 ## 📔 Notebooks, scripts e arquivos do projeto
 * `Fera_Formidavel_10.ipynb`: otimização do problema do caixeiro viajante que prefere cidades ímpares através de um algoritmo genético.
@@ -42,9 +42,23 @@ Os algoritmos genéticos desenvolvidos neste trabalho podem ser executados em co
    
 ## 🧬 Construindo e evoluindo o algoritmo genético
 
+Para a otimização dos problemas, nos baseamos no algoritmo desenvolvido pelo Prof. Dr. Daniel Cassar para o problema tradicional do caixeiro viajante, fazendo as adaptações necessárias de acordo com o objetivo de cada problema. Assim, as funções alteradas foram:
+
 * **Caixeiro viajante que prefere cidades ímpares:**
+  - `cria_cidades_impar`, `cria_candidato_caixeiro_impar`, `populacao_caixeiro_impar`: criam cidades, candidato e população do problema de acordo com um índice numérico inteiro;
+  - `calc_min_inx_par`: calcula o índice em que a primeira cidade de índice par aparece num candidato;
+  - `cruzamento_ordenado_intervalos`: realiza o cruzamento ordenado em diferentes intervalos --- nesse caso, uma lista contendo os índices ímpares, e uma contendo os índices pares;
+  - `mutacao_troca_cx_impar`: realiza a mutação de troca entre elementos de mesma paridade.
 
 * **Múltiplos caixeiros viajantes:**
+  - `plota_trajeto_multiplos_cx`: plota o trajetos de múltiplos caixeiros viajantes simultaneamente;
+  - `calc_n_cidades_multiplos_cx`: calcula o número de cidades que cada caixeiro pode visitar dentre as possíveis, considerando que todos os caixeiros passam por pelo menos uma cidade;
+  - `cria_candidato_multiplos_cx`, `populacao_multiplos_cx`: criam o candidato e a população do problema, considerando múltiplos caixeiros em cada indivíduo;
+  - `funcao_objetivo_multiplos_cx`, `funcao_objetivo_pop_multiplos_cx`: calcula a somatória das distâncias percorridas por todos os caixeiros em seus respectivos trajetos, para um individuo e uma população;
+  - `cruzamento_ordenado_multiplos_cx`: realiza o cruzamento ordenado para uma lista de listas --- cruzando cada elemento interna em ordem e mantendo o tamanho das listas dos pais;
+  - `mutacao_troca_multiplos_cx`: aplica mutação de troca entre duas cidades no problema;
+  - `mutacao_tamanho`: aplica uma mutação que altera o tamanho do trajeto de dois caixeiros em uma cidade.
+
 
 ## 🔢 Resultados Obtidos
 
