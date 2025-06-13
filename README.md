@@ -98,8 +98,8 @@ A fim de analisar os resultados obtidos por cada algoritmo genético, foi feita 
 ## 🧠 Contribuições dos Colaboradores
 
 #### Para o Projeto:
-* Vitor Dreveck: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema, implementação de busca exaustiva, comentários descritivos no código .
-* Yasmin Shimizu: Construção da resolução do problema, implementação das funções necessárias para a resolução do problema.
+* Vitor Dreveck: Construção da resolução dos problemas, implementação das funções necessárias para a resolução dos problemas, implementação de busca exaustiva, comentários descritivos nos códigos.
+* Yasmin Shimizu: Construção da resolução dos problemas, implementação das funções necessárias para a resolução dos problemas, comentários descritivos nos códigos do problema dos múltiplos caixeiros viajantes.
 
 #### Para o Repositório GitHub:
 * Vitor Dreveck: Upload de arquivos de código.
